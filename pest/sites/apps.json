@@ -1,0 +1,21 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "17.0.0-dev"
+    },
+    "pest_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "9b8558670bcffc664bbb06c82c3289117dfdb1e0",
+            "branch": "sharieff-development"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    }
+}

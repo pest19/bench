@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "SUR-.#####",
+ "creation": "2026-08-29 21:56:18.780184",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gjuj",
+  "survey_date",
+  "lead",
+  "property",
+  "surveyor",
+  "location_and_photos_section",
+  "gps",
+  "property_photos",
+  "problem_assessment_section",
+  "problem_category",
+  "severity",
+  "affected_area",
+  "recommendations_section",
+  "recommendations",
+  "suggested_chemical",
+  "estimated_cost",
+  "additional_information_section",
+  "remarks",
+  "signature",
+  "voice_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gjuj",
+   "fieldtype": "Section Break",
+   "label": "Survey Details"
+  },
+  {
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Survey Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property",
+   "fieldtype": "Data",
+   "label": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "surveyor",
+   "fieldtype": "Link",
+   "label": "Surveyor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location_and_photos_section",
+   "fieldtype": "Section Break",
+   "label": "Location and Photos"
+  },
+  {
+   "fieldname": "gps",
+   "fieldtype": "Geolocation",
+   "label": "GPS"
+  },
+  {
+   "fieldname": "property_photos",
+   "fieldtype": "Table",
+   "label": "Property Photos",
+   "options": "Survey Photo"
+  },
+  {
+   "fieldname": "problem_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "Problem Assessment"
+  },
+  {
+   "fieldname": "problem_category",
+   "fieldtype": "Data",
+   "label": "Problem Category"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "affected_area",
+   "fieldtype": "Float",
+   "label": "Affected Area"
+  },
+  {
+   "fieldname": "recommendations_section",
+   "fieldtype": "Section Break",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text",
+   "label": "Recommendation"
+  },
+  {
+   "fieldname": "estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Cost"
+  },
+  {
+   "fieldname": "additional_information_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "voice_note",
+   "fieldtype": "Attach",
+   "label": "Voice Note"
+  },
+  {
+   "fieldname": "suggested_chemical",
+   "fieldtype": "Data",
+   "label": "Suggested Chemical"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-30 16:48:38.511487",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Survey",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

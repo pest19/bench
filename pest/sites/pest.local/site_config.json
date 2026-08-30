@@ -1,0 +1,11 @@
+{
+ "db_name": "_70efd0bb4a1a5c53",
+ "db_password": "C6w3dRi6d1dirNKk",
+ "db_type": "mariadb",
+ "db_user": "_70efd0bb4a1a5c53",
+ "developer_mode": 1,
+ "installed_apps": [
+  "frappe",
+  "pest_management"
+ ]
+}
