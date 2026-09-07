@@ -16,6 +16,7 @@ class Survey(Document):
 		from pest_management.crm.doctype.survey_photo.survey_photo import SurveyPhoto
 
 		affected_area: DF.Float
+		customer_name: DF.Data | None
 		estimated_cost: DF.Currency
 		gps: DF.Geolocation | None
 		lead: DF.Link

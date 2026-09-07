@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "QUOT-{customer}-.#####",
+ "creation": "2026-09-04 20:10:19.785020",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ytmv",
+  "quotation_date",
+  "customer",
+  "survey_reference",
+  "service_package",
+  "validity",
+  "payment_terms",
+  "line_items_section",
+  "line_items",
+  "cost_breakdown_section",
+  "chemical_cost",
+  "labour_cost",
+  "subtotal",
+  "gst",
+  "gst_amount",
+  "discount",
+  "discount_amount",
+  "grand_total",
+  "approval_signature",
+  "signature",
+  "approved_by",
+  "approval_date",
+  "approval_remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ytmv",
+   "fieldtype": "Section Break",
+   "label": "Quotation Details"
+  },
+  {
+   "fieldname": "quotation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Quotation Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "survey_reference.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "survey_reference",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Survey Reference",
+   "options": "Survey",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_package",
+   "fieldtype": "Data",
+   "label": "Service Package"
+  },
+  {
+   "fieldname": "validity",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Validity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Payment Terms",
+   "reqd": 1
+  },
+  {
+   "fieldname": "line_items_section",
+   "fieldtype": "Section Break",
+   "label": "Line Items"
+  },
+  {
+   "fieldname": "line_items",
+   "fieldtype": "Table",
+   "label": "Line Items",
+   "options": "Quotation Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_breakdown_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Breakdown"
+  },
+  {
+   "fieldname": "chemical_cost",
+   "fieldtype": "Currency",
+   "label": "Chemical Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "labour_cost",
+   "fieldtype": "Currency",
+   "label": "Labour Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "Subtotal"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Percent",
+   "label": "GST",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gst_amount",
+   "fieldtype": "Currency",
+   "label": "GST Amount"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "approval_signature",
+   "fieldtype": "Section Break",
+   "label": "Approval & Signature"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Datetime",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "approval_remarks",
+   "fieldtype": "Small Text",
+   "label": "Approval Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quotation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-06 21:32:10.724674",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Quotation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Gray",
+   "title": "Draft"
+  },
+  {
+   "color": "Orange",
+   "title": "Manager Approval"
+  },
+  {
+   "color": "Blue",
+   "title": "Sent"
+  },
+  {
+   "color": "Green",
+   "title": "Accepted"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelled"
+  }
+ ]
+}

@@ -1,8 +1,7 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
- "allow_rename": 1,
- "autoname": "SUR-.#####",
+ "autoname": "SUR-{customer_name}-.#####",
  "creation": "2026-08-29 21:56:18.780184",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,6 +9,7 @@
   "section_break_gjuj",
   "survey_date",
   "lead",
+  "customer_name",
   "property",
   "surveyor",
   "location_and_photos_section",
@@ -137,12 +137,19 @@
    "fieldname": "suggested_chemical",
    "fieldtype": "Data",
    "label": "Suggested Chemical"
+  },
+  {
+   "fetch_from": "lead.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-30 16:48:38.511487",
+ "modified": "2026-09-04 20:57:27.804469",
  "modified_by": "Administrator",
  "module": "CRM",
  "name": "Survey",
