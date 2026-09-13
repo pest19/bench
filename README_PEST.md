@@ -150,16 +150,9 @@ The custom Pest Management application should be present in the `apps` directory
 Install the application on the newly created site:
 
 ```bash
-bench --site pest.localhost install-app <APP_NAME>
-```
-
-Replace `<APP_NAME>` with the actual application name present inside the `apps` directory.
-
-For example:
-
-```bash
 bench --site pest.localhost install-app pest_management
 ```
+
 
 You can verify installed applications using:
 
